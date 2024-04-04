@@ -2,7 +2,7 @@ FROM node:16-alpine
 
 WORKDIR /app
 COPY . .
-RUN npm install
+RUN npm ci
 
 EXPOSE 80
 CMD ["npm","start"]
